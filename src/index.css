@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background: #f6f8f5;
+  color: #1f2937;
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Thin, unobtrusive scrollbars */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #d1d5db transparent;
+}
+
+/* Rich-text editor (Terms / Privacy) */
+.content-editor .ql-toolbar.ql-snow {
+  border: 1px solid #e5e7eb;
+  border-radius: 10px 10px 0 0;
+  background: #fafafa;
+}
+.content-editor .ql-container.ql-snow {
+  border: 1px solid #e5e7eb;
+  border-top: 0;
+  border-radius: 0 0 10px 10px;
+  font-family: inherit;
+  font-size: 15px;
+}
+.content-editor .ql-editor {
+  min-height: 420px;
+  line-height: 1.7;
+}
+
+/* Clickable table rows */
+.clickable-rows .ant-table-tbody > tr {
+  cursor: pointer;
+}
